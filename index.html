@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <style>
+    body {
+      background: #ffffff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Lato', 'sans-serif';
+      -webkit-transition: all 100ms linear;
+      transition: all 100ms linear;
+      color: #322b30;
+      padding: 0 10%;
+    }
+    h1 {
+      font-size: 4.375em;
+      margin-bottom: 0px;
+      font-weight: 300;
+    }
+    h2 {
+      margin: 0px 0px 40px 0px;
+      font-weight: 300;
+      font-size: 1.688em;
+    }
+    p,a {
+      font-size: .938em;
+      color: #322b30;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-top: 40px;
+
+    }
+    .hero {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .hero a {
+      padding: 10px;
+      background: #d7d7d7;
+      border: 2px solid #d7d7d7;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 60px;
+      font-weight: 700;
+      -webkit-transition: all 100ms linear;
+      transition: all 100ms linear;
+    }
+    .hero a:hover {
+      background: none;
+      border-color:rgb(0,0,0);
+      border: 2px solid #d7d7d7;
+    }
+    .wiki-wrapper {
+      display: none;
+    }
+    .wiki-wrapper > p {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .wiki {
+      background: #d7d7d7;
+      padding: 30px;
+      overflow-x: auto;
+    }
+
+    .title a {
+      font-size: 1.250em;
+      text-decoration: none;
+      color: #322b30;
+      display: inline-block;
+      font-weight: 700;
+      -webkit-transition: all 100ms linear;
+      transition: all 100ms linear;
+    }
+    .title a:hover {
+      text-decoration: none;
+      color: #322b30;
+      display: inline-block;
+      font-weight: 700;
+    }
+    .image img {
+
+      max-width: 275px;
+      height: auto;
+      float: left;
+      margin-right: 20px;
+    }
+    .article {
+      overflow: auto;
+    }
+
+    @media (max-width: 1000px){
+      body {
+        background: #DB5436;
+        color: #ffffff;
+      }
+      .hero a {
+        background: #a24732;
+        border: 2px solid #a24732;
+        color: #ffffff;
+      }
+      .hero a:hover {
+        background: none;
+        border: 2px solid #a24732;
+      }
+      .wiki-wrapper p, .title a, .article p{
+        color: #ffffff;
+      }
+      .wiki {
+        background: #a24732;
+      }
+    }
+    @media (max-width: 900px){
+      body {
+        background: #38B5C7;
+        color: #ffffff;
+      }
+      .hero a {
+        background: #267d8a;
+        border: 2px solid #267d8a;
+        color: #ffffff;
+      }
+      .hero a:hover {
+        background: none;
+        border: 2px solid #267d8a;
+      }
+      .wiki-wrapper p, .title a, .article p{
+        color: #ffffff;
+      }
+      .wiki {
+        background: #267d8a;
+      }
+      .image {
+        text-align: center;
+      }
+      .image img {
+        float: none;
+        margin-bottom: 20px;
+      }
+      .title, .article {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 800px){
+      body {
+        background: #79397F;
+        color: #ffffff;
+      }
+      .hero a {
+        background: #4e2652;
+        border: 2px solid #4e2652;
+        color: #ffffff;
+      }
+      .hero a:hover {
+        background: none;
+        border: 2px solid #4e2652;
+      }
+      .wiki-wrapper p, .title a, .article p{
+        color: #ffffff;
+      }
+      .wiki {
+        background: #4e2652;
+      }
+    }
+
+    @media (max-width: 700px){
+      body {
+        background: #F55260;
+        color: #ffffff;
+      }
+      .hero a {
+        background: #b5464f;
+        border: 2px solid #b5464f;
+        color: #ffffff;
+      }
+      .hero a:hover {
+        background: none;
+        border: 2px solid #b5464f;
+      }
+      .wiki-wrapper p, .title a, .article p{
+        color: #ffffff;
+      }
+      .wiki {
+        background: #b5464f;
+      }
+    }
+
+    @media (max-width: 600px){
+      body {
+        background: #F7C529;
+        color: #ffffff;
+      }
+      .hero a {
+        background: #c29f34;
+        border: 2px solid #c29f34;
+        color: #ffffff;
+      }
+      .hero a:hover {
+        background: none;
+        border: 2px solid #c29f34;
+      }
+      .wiki-wrapper p, .title a, .article p{
+        color: #ffffff;
+      }
+      .wiki {
+        background: #c29f34;
+      }
+      .image img {
+        max-width: 245px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="hero">
+      <h1> ERROR </h1>
+      <h2>Page Does Not Exist</h2>
+      <a href="/">Back to Home Page</a>
+    </div>
+    <div class="wiki-wrapper">
+      <p>While Your here might as well take the time to learn something:</p>
+      <div class="wiki">
+        <div class="refresh"></div>
+        <div class="image"></div>
+        <div class="title"><a href="" target="_blank"></a></div>
+        <div class="article"></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+    (function () {
+      var badWords = "",
+          minchars, maxchars, attempts, article;
+
+      function wordFilter() {
+        $.getJSON( 'naughty_list.csv', function(data) {
+          badWords = data.split(',');
+        });
+      }
+
+      function extractWords(title) {
+        return _.map(title.split(' '), function(word, i){
+          return word.replace(/[\W]/g, '').toLowerCase();
+        });
+      }
+
+      function testWords(wordsArr) {
+        _.each(wordsArr, function(word, i){
+          if (badWords.indexOf(word) !== -1) {
+            return true;
+          }
+        });
+      }
+
+      function updateVars(minimumCharacters, maximumCharacters) {
+        attempts = 0;
+        minchars = minimumCharacters;
+        maxchars = maximumCharacters;
+      }
+
+      function getArticle(minimumCharacters, maximumCharacters, isRetry) {
+        if (!isRetry) {
+          updateVars.apply(null, _.toArray(arguments).slice(0,2));
+        }
+        $.getJSON('http://en.wikipedia.org/w/api.php?action=query&prop=images|info|extracts|pageimages&generator=random&exintro=&grnnamespace=0&inprop=url&imlimit=1&format=json&callback=?', function(data) {
+          _.each(data.query.pages, function(val, key) {
+              article = val;
+          });
+          getArticleImage();
+        });
+      }
+
+      function getArticleImage() {
+        $.getJSON('http://en.wikipedia.org/w/api.php?action=query&titles=File:' + article.pageimage + '&prop=imageinfo&iiprop=url&iilocalonly&format=json&callback=?', function(data) {
+          _.each(data.query.pages, function(val, key) {
+              if(val.hasOwnProperty('imageinfo')) {
+                imageUrl = val.imageinfo[0].url;
+              } else {
+                imageUrl = null
+              }
+          });
+          processArticle();
+        });
+      }
+
+      function processArticle() {
+        var titleArr = extractWords(article.title);
+        if (testWords(titleArr)) {
+          getArticle(0, 0, true);
+          return;
+        }
+        if (article.extract.length > minchars || attempts++ > 5) {
+          $('.wiki-wrapper').show();
+          $('.title a').attr('href', article.fullurl).text(article.title);
+          $('.article').html(article.extract);
+          if(imageUrl != null) {
+            $('.image').prepend('<img src="' + imageUrl + '" />');
+          }
+        } else {
+          getArticle(0, 0, true);
+        }
+      }
+
+      getArticle(200, 500);
+    }());
+
+  </script>
+
+
+</body>
+
+</html>
